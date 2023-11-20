@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  mint-obs-api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: couch-mint-obs-api
+    ports:
+      - "8080:8080"

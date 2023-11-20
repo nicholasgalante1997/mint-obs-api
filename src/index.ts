@@ -1,3 +1,5 @@
 import { server } from './server';
 
-server.listen(3000, () => console.log('Listening...'));
+const PORT = (process.env?.PORT) || 8080;
+
+server.listen(PORT, () => console.log('Listening...'));
