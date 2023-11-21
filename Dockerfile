@@ -22,6 +22,8 @@ RUN pnpm install
 # Build a static dist of the website
 RUN pnpm build
 # Clean development source code and deps
-RUN rm -rf src 
+RUN rm -rf src/ node_modules/
+
+RUN pnpm install --prod
 
 CMD ["pnpm", "start"]
