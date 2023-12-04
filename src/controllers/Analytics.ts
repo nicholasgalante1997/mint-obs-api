@@ -1,4 +1,4 @@
-import { Controller } from './base/Controller';
+import { Controller } from './Controller';
 import { getAnalytics } from '@/models/AnalyticsModel';
 import { Analytics } from '@/types/analytics';
 
